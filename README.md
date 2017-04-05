@@ -17,7 +17,7 @@ public final static String streamaxiaStreamName = "YOUR-STREAM-NAME-HERE";
 ```
 Build and run the project. You can view your broadcast at the following url: http://play.streamaxia.com/streamaxia/yourStreamName
 
-For more information about the Streamaxia Open SDK set up please check [Streamaxia iOS Open SDK Setup Guide](files/OpenSDK_iOS_3.2.pdf)
+For more information about the Streamaxia Open SDK set up please check [Streamaxia iOS Open SDK Setup Guide](files/OpenSDK_Android.pdf)
 
 ## Terms
 By using this software, you agree the terms specified in the Licensing Agreement represented by the [License Agreement](LICENSE.md)
@@ -41,7 +41,7 @@ The counter is reset every month on the 1st.
 
 - [Streamaxia site](https://www.streamaxia.com/)
 
-- [Streamaxia Android Open SDK Setup Guide](files/OpenSDK_iOS_3.2.pdf)
+- [Streamaxia Android Open SDK Setup Guide](files/OpenSDK_Android.pdf)
 
 - [BroadcastMe App page](https://www.streamaxia.com/broadcastme-whitelabel-app/)
 
