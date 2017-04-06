@@ -20,15 +20,7 @@ Build and run the project. You can view your broadcast at the following url: htt
 For more information about the Streamaxia Open SDK set up please check [Streamaxia iOS Open SDK Setup Guide](files/OpenSDK_Android.pdf)
 
 ## Terms
-By using this software, you agree the terms specified in the Licensing Agreement represented by the [License Agreement](LICENSE.md)
-
- **NOTE:** Depending on your license type, each device that has this software running could be limited to a specific amount of streaming hours. 
-
-For example, in this demo app, all the users that use the app will be able to broadcast for 1 hour/month. 
-
-Once the limit is reached, the library will return an AXWarning with code 2001 and will just stop the live streaming feature, without crashing the app. 
-
-The counter is reset every month on the 1st.
+By using this software, you agree the terms specified in the Licensing Agreement represented by the [License Agreement](https://www.streamaxia.com/licensing-agreement/)
 
 
 ## Help and Support
