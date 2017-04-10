@@ -3,7 +3,7 @@
 ## Introduction
 [Streamaxia OpenSDK](https://www.streamaxia.com/opensdk-android-rtmp-library/) is an easy to integrate, low-latency live video streaming library for iOS and Android mobile apps. Open live video broadcast – not limited to any specific CDN, RTMP Media Server or proprietary protocols. Drag, Drop & Go Live on Facebook, YouTube, Twitch, Twitter, Microsoft Azure, Adobe Media Server, Wowza, Red5, Sewise and more!
 
-This is a short programming guide about how to test Streamaxia OpenSDK library using our demo iOS project.
+This is a short programming guide about how to test Streamaxia OpenSDK library using our demo Android project.
 
 [Try and order Streamaxia OpenSDK today!](https://www.streamaxia.com/opensdk-pricing/)
 
@@ -17,7 +17,7 @@ public final static String streamaxiaStreamName = "YOUR-STREAM-NAME-HERE";
 ```
 Build and run the project. You can view your broadcast at the following url: http://play.streamaxia.com/streamaxia/yourStreamName
 
-For more information about the Streamaxia Open SDK set up please check [Streamaxia iOS Open SDK Setup Guide](files/OpenSDK_Android.pdf)
+For more information about the Streamaxia Open SDK set up please check [Streamaxia Android Open SDK Setup Guide](files/OpenSDK_Android.pdf)
 
 ## Terms
 By using this software, you agree the terms specified in the Licensing Agreement represented by the [License Agreement](https://www.streamaxia.com/licensing-agreement/)
