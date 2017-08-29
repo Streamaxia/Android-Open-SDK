@@ -37,4 +37,7 @@ captures/
 .idea/workspace.xml
 
 # Keystore files
-*.jks
+/.idea/libraries
+.DS_Store
+.externalNativeBuild
+StreamaxiaOpenSDKDemo/.idea/libraries

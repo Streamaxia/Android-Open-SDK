@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/StreamaxiaOpenSDKDemo.iml" filepath="$PROJECT_DIR$/StreamaxiaOpenSDKDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appdemo/appdemo.iml" filepath="$PROJECT_DIR$/appdemo/appdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamaxia-opensdk/streamaxia-opensdk.iml" filepath="$PROJECT_DIR$/streamaxia-opensdk/streamaxia-opensdk.iml" />
+    </modules>
+  </component>
+</project>
