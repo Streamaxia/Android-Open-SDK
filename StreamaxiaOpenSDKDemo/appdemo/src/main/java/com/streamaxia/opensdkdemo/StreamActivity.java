@@ -105,7 +105,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
             startStopTextView.setText("STOP");
             mChronometer.setBase(SystemClock.elapsedRealtime());
             mChronometer.start();
-            mPublisher.startPublish("rtmp://192.168.1.241/live/test");
+            mPublisher.startPublish("rtmp://192.168.1.241/live/test" + streamaxiaStreamName);
         } else {
             startStopTextView.setText("START");
             stopChronometer();
