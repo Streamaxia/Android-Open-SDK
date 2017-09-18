@@ -3,28 +3,32 @@ package com.streamaxia.opensdkdemo;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.streamaxia.android.CameraPreview;
 import com.streamaxia.android.StreamaxiaPublisher;
 import com.streamaxia.android.handlers.EncoderHandler;
 import com.streamaxia.android.handlers.RecordHandler;
 import com.streamaxia.android.handlers.RtmpHandler;
+import com.streamaxia.android.utils.Size;
 
 import java.io.IOException;
 import java.net.SocketException;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import libs.google.android.cameraview.CameraView;
+
+;
 
 public class StreamActivity extends AppCompatActivity implements RtmpHandler.RtmpListener, RecordHandler.RecordListener,
         EncoderHandler.EncodeListener {
@@ -38,7 +42,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     public final static int height = 1280;
 
     @BindView(R.id.preview)
-    CameraView mCameraView;
+    CameraPreview mCameraView;
     @BindView(R.id.chronometer)
     Chronometer mChronometer;
     @BindView(R.id.start_stop)
@@ -61,6 +65,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
         mPublisher.setEncoderHandler(new EncoderHandler(this));
         mPublisher.setRtmpHandler(new RtmpHandler(this));
         mPublisher.setRecordEventHandler(new RecordHandler(this));
+        mCameraView.startCamera();
 
         setStreamerDefaultValues();
     }
@@ -70,7 +75,6 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
         super.onResume();
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA)
                 == PackageManager.PERMISSION_GRANTED) {
-            mCameraView.start();
             stopStreaming();
             stopChronometer();
             startStopTextView.setText("START");
@@ -84,7 +88,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     @Override
     protected void onPause() {
         super.onPause();
-        mCameraView.stop();
+        mCameraView.stopCamera();
         mPublisher.pauseRecord();
     }
 
@@ -101,7 +105,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
             startStopTextView.setText("STOP");
             mChronometer.setBase(SystemClock.elapsedRealtime());
             mChronometer.start();
-            mPublisher.startPublish("rtmp://rtmp.streamaxia.com/streamaxia/" + streamaxiaStreamName);
+            mPublisher.startPublish("rtmp://192.168.1.241/live/test");
         } else {
             startStopTextView.setText("START");
             stopChronometer();
@@ -127,8 +131,9 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     }
 
     private void setStreamerDefaultValues() {
-        mPublisher.setVideoBitRate(bitrate);
-        mPublisher.setVideoOutputResolution(width, height, getResources().getConfiguration().orientation);
+        List<Size> sizes = mPublisher.getSupportedPictureSizes(getResources().getConfiguration().orientation);
+        Size resolution = sizes.get(0);
+        mPublisher.setVideoOutputResolution(resolution.width, resolution.height, this.getResources().getConfiguration().orientation);
     }
 
     private void setStatusMessage(final String msg) {
