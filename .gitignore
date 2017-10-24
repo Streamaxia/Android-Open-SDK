@@ -45,3 +45,4 @@ captures/
 .DS_Store
 .externalNativeBuild
 StreamaxiaOpenSDKDemo/.idea/libraries
+workspace.xml
