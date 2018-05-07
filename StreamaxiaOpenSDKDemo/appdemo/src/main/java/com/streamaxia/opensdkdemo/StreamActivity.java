@@ -131,6 +131,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     }
 
     private void setStreamerDefaultValues() {
+        // Set one of the available resolutions
         List<Size> sizes = mPublisher.getSupportedPictureSizes(getResources().getConfiguration().orientation);
         Size resolution = sizes.get(0);
         mPublisher.setVideoOutputResolution(resolution.width, resolution.height, this.getResources().getConfiguration().orientation);
@@ -148,6 +149,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
 
     /*
     * EncoderHandler implementation
+    * You can use these callbacks to get events from the streamer
     * */
 
     @Override
