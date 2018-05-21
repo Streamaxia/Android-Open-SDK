@@ -41,6 +41,7 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     public final static int width = 720;
     public final static int height = 1280;
 
+    // The view that displays the camera feed
     @BindView(R.id.preview)
     CameraPreview mCameraView;
     @BindView(R.id.chronometer)
