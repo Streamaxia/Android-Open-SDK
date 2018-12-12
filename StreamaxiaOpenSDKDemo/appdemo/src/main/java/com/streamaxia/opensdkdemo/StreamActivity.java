@@ -3,7 +3,9 @@ package com.streamaxia.opensdkdemo;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -107,15 +109,32 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
             mChronometer.setBase(SystemClock.elapsedRealtime());
             mChronometer.start();
             mPublisher.startPublish("rtmp://rtmp.streamaxia.com/streamaxia/" + streamaxiaStreamName);
+            takeSnapshot();
         } else {
             startStopTextView.setText("START");
             stopChronometer();
             mPublisher.stopPublish();
         }
+
     }
 
     private void stopStreaming() {
         mPublisher.stopPublish();
+    }
+
+    private void takeSnapshot() {
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mCameraView.takeSnapshot(new CameraPreview.SnapshotCallback() {
+                    @Override
+                    public void onSnapshotTaken(Bitmap image) {
+                        //Do something with the snapshot
+                    }
+                });
+            }
+        }, 5000);
     }
 
     @Override
