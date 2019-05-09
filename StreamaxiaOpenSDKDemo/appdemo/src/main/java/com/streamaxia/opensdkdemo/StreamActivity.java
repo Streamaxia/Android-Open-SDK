@@ -89,9 +89,17 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        mCameraView.startCamera();
+    }
+
+    @Override
     protected void onPause() {
         super.onPause();
         mCameraView.stopCamera();
+        mPublisher.stopPublish();
         mPublisher.pauseRecord();
     }
 
