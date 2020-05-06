@@ -30,3 +30,9 @@ Version 3.1.5 - 04.05.2020
 # Fix mute issue
 # Add isMute property
 
+Version 3.1.6 - 06.05.2020
+
+# Mute now sends empty buffers
+# Improve sound quality
+# Fix method not found issues
+

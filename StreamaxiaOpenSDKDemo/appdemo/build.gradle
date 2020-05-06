@@ -5,7 +5,7 @@ android {
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.streamaxia.opensdkdemo"
-        minSdkVersion 16
+        minSdkVersion 22
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
