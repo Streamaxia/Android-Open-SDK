@@ -15,6 +15,7 @@ This is a short programming guide about how to test Streamaxia OpenSDK library u
 
 [Streamaxia Announces v3.3: iOS 14 & Android 11 Compatibility and Android RTMP Support](https://blog.streamaxia.com/streamaxia-announces-v3-3-ios-14-android-11-compatibility-and-android-rtmp-support-a1a7a2a74d6f)
 
+
 ## Android Demo Project Installation:
 
 - Clone the repository on your computer
@@ -51,9 +52,7 @@ By using this software, you agree the terms specified in the Licensing Agreement
 
 - [Streamaxia Blog](https://medium.com/streamaxia)
 
-- [Streamaxia Blog](https://medium.com/streamaxia)
-
-- [Full iOS API (download the entire folder and run index.html)](files/JavaDocs)
+- [Full Android API (download the entire folder and run index.html)](files/JavaDocs)
 
 
 
