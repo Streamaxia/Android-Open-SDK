@@ -26,7 +26,7 @@ public final static String streamaxiaStreamName = "YOUR-STREAM-NAME-HERE";
 ```
 Build and run the project. You can view your broadcast at the following url: http://play.streamaxia.com/streamaxia/yourStreamName, provided you are broadcasting at rtmp://rtmp.streamaxia.com/streamaxia/yourStreamName (You can use our RTMP media server for testing purposes, only. You need to provide you own media server. We recommend Wowza.)
 
-For more information about the Streamaxia Open SDK set up please check [Streamaxia Android Open SDK Setup Guide](files/OpenSDK_iOS_3.3.pdf)
+For more information about the Streamaxia Open SDK set up please check [Streamaxia Android Open SDK Setup Guide](files/OpenSDK_Android_3.3.pdf)
 
 ## Terms
 By using this software, you agree the terms specified in the Licensing Agreement represented by the [License Agreement](https://www.streamaxia.com/licensing-agreement/)
