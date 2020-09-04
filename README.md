@@ -7,6 +7,14 @@ This is a short programming guide about how to test Streamaxia OpenSDK library u
 
 [Try and order Streamaxia OpenSDK today!](https://www.streamaxia.com/opensdk-pricing/)
 
+[Frequently Asked Questions for iOS / Android RTMP Streaming](https://blog.streamaxia.com/frequently-asked-questions-for-ios-android-rtmp-streaming-a2fb3c7594db)
+
+[RTMP Versus WebRTC. Which One To Choose?](https://blog.streamaxia.com/rtmp-versus-webrtc-which-one-to-choose-2020-report-fed7e4d84b18)
+
+[Why Choose Streamaxia OpenSDK Over Open-Source or Other Alternatives?](https://blog.streamaxia.com/why-choose-streamaxia-opensdk-over-open-source-or-other-alternatives-a031fbb31ab4)
+
+[Streamaxia Announces v3.3: iOS 14 & Android 11 Compatibility and Android RTMP Support](https://blog.streamaxia.com/streamaxia-announces-v3-3-ios-14-android-11-compatibility-and-android-rtmp-support-a1a7a2a74d6f)
+
 ## Android Demo Project Installation:
 
 - Clone the repository on your computer
@@ -15,7 +23,7 @@ This is a short programming guide about how to test Streamaxia OpenSDK library u
 // Modify this to your desired stream name
 public final static String streamaxiaStreamName = "YOUR-STREAM-NAME-HERE";
 ```
-Build and run the project. You can view your broadcast at the following url: http://play.streamaxia.com/streamaxia/yourStreamName
+Build and run the project. You can view your broadcast at the following url: http://play.streamaxia.com/streamaxia/yourStreamName, provided you are broadcasting at rtmp://rtmp.streamaxia.com/streamaxia/yourStreamName (You can use our RTMP media server for testing purposes, only. You need to provide you own media server. We recommend Wowza.)
 
 For more information about the Streamaxia Open SDK set up please check [Streamaxia Android Open SDK Setup Guide](files/OpenSDK_Android.pdf)
 
@@ -43,6 +51,9 @@ By using this software, you agree the terms specified in the Licensing Agreement
 
 - [Streamaxia Blog](https://medium.com/streamaxia)
 
+- [Streamaxia Blog](https://medium.com/streamaxia)
+
+- [Full iOS API (download the entire folder and run index.html)](files/JavaDocs)
 
 
 
