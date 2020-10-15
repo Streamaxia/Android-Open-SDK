@@ -47,3 +47,7 @@ Version 3.1.8 - 27.08.2020
 Version 3.1.9 - 07.09.2020
 
 #Fix tls crash on some devices
+
+Version 4.0.12 - 15.09.2020
+
+#Fix encoder crash on some devices
