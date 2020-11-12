@@ -55,3 +55,7 @@ Version 4.0.12 - 15.09.2020
 Version 4.0.13 - 4.11.2020
 
 #Fix youtube and aws streaming audio issues
+
+Version 4.0.14 - 12.11.2020
+
+#Add zoom feature
