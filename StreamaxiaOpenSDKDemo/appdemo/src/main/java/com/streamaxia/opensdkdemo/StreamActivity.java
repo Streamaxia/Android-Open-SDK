@@ -68,6 +68,10 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
         mPublisher.setEncoderHandler(new EncoderHandler(this));
         mPublisher.setRtmpHandler(new RtmpHandler(this));
         mPublisher.setRecordEventHandler(new RecordHandler(this));
+
+        mPublisher.setFramerate(30);
+        mPublisher.setKeyframeInterval(5);
+
         mCameraView.startCamera();
 
         setStreamerDefaultValues();
