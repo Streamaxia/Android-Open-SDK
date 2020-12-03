@@ -59,3 +59,7 @@ Version 4.0.13 - 4.11.2020
 Version 4.0.14 - 12.11.2020
 
 #Add zoom feature
+
+Version 4.0.15 - 03.12.2020
+
+#Add framerate and keyframe control
