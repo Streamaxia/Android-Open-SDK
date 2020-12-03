@@ -39,9 +39,6 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
 
     // Set default values for the streamer
     public final static String streamaxiaStreamName = "demo";
-    public final static int bitrate = 500;
-    public final static int width = 720;
-    public final static int height = 1280;
 
     // The view that displays the camera feed
     @BindView(R.id.preview)
