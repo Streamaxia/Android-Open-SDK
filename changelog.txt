@@ -63,3 +63,7 @@ Version 4.0.14 - 12.11.2020
 Version 4.0.15 - 03.12.2020
 
 #Add framerate and keyframe control
+
+Version 4.0.16 - 10.12.2020
+
+#Fix google pixel camera switch issue
