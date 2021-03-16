@@ -68,6 +68,10 @@ Version 4.0.16 - 10.12.2020
 
 #Fix google pixel camera switch issue
 
-Versin 4.0.17 - 20.01.2021
+Version 4.0.17 - 20.01.2021
 
 #Fix recording on pixel phones
+
+Version 4.0.18 - 16.03.2021
+
+#Add 1 year free update
