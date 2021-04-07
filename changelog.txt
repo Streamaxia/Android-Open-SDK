@@ -75,3 +75,7 @@ Version 4.0.17 - 20.01.2021
 Version 4.0.18 - 16.03.2021
 
 #Add 1 year free update
+
+Version 4.0.19 - 7.04.2021
+
+#Fix recording issue
