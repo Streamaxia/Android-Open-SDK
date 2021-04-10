@@ -124,7 +124,6 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
             stopChronometer();
             mPublisher.stopPublish();
         }
-
     }
 
     private void stopStreaming() {

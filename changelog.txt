@@ -79,3 +79,7 @@ Version 4.0.18 - 16.03.2021
 Version 4.0.19 - 07.04.2021
 
 #Fix 1 year free update issue
+
+Version 4.1 - 10.04.2021
+
+#Add StreamaxiaStreamer API
