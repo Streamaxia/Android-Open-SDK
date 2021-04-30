@@ -83,3 +83,7 @@ Version 4.0.19 - 07.04.2021
 Version 4.1 - 10.04.2021
 
 #Add StreamaxiaStreamer API
+
+Version 4.1.1 - 30.04.2021
+
+#Add streaming bitrate
