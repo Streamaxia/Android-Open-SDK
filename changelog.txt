@@ -79,3 +79,7 @@ Version 4.0.18 - 16.03.2021
 Version 4.0.19 - 7.04.2021
 
 #Fix recording issue
+
+Version 4.0.20 - 25.05.2021
+
+#Integrate main changes
