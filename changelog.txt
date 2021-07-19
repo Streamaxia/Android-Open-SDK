@@ -87,3 +87,7 @@ Version 4.1 - 10.04.2021
 Version 4.1.1 - 30.04.2021
 
 #Add streaming bitrate
+
+Version 4.1.2 - 19.07.2021
+
+#Fix rtmps user and pass parsing
