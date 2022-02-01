@@ -281,6 +281,11 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     }
 
     @Override
+    public void onRtmpBitrateChanged(double v) {
+
+    }
+
+    @Override
     public void onRtmpSocketException(SocketException e) {
         handleException(e);
     }

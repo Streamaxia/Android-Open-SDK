@@ -249,6 +249,11 @@ public class FileStreamingActivity extends AppCompatActivity implements RtmpHand
     }
 
     @Override
+    public void onRtmpBitrateChanged(double v) {
+
+    }
+
+    @Override
     public void onRtmpSocketException(SocketException e) {
         handleException(e);
     }
