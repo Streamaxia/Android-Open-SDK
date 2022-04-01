@@ -20,7 +20,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".FileStreamingActivity"></activity>
         <activity android:name=".ChooserActivity" />
-        <activity android:name=".SplashscreenActivity">
+        <activity android:name=".SplashscreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -40,6 +40,8 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     // Set default values for the streamer
     public final static String streamaxiaStreamName = "demo";
 
+    private String recPath;
+
     // The view that displays the camera feed
     @BindView(R.id.preview)
     CameraPreview mCameraView;
@@ -55,6 +57,9 @@ public class StreamActivity extends AppCompatActivity implements RtmpHandler.Rtm
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+         recPath = getExternalMediaDirs()[0].getAbsolutePath() + "/testyzz.mp4";
+
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_stream);
         ButterKnife.bind(this);
