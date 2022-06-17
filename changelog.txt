@@ -103,3 +103,7 @@ Version 4.1.4 - 24.03.2022
 Version 4.1.5 - 11.06.2022
 
 #Fixed rtmps authnetication issues
+
+Version 4.1.6 - 17.06.2022
+
+#Fixed authnetication bad credentials handling
