@@ -1,5 +1,6 @@
 package com.streamaxia.opensdkdemo;
 
+import android.content.res.AssetManager;
 import android.media.MediaCodecInfo;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,7 +20,11 @@ import com.streamaxia.android.streamer.StreamaxiaStreamer;
 import com.streamaxia.opensdkdemo.filestreaming.IFrameCallback;
 import com.streamaxia.opensdkdemo.filestreaming.MediaMoviePlayer;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.SocketException;
 import java.nio.ByteBuffer;
 
@@ -44,7 +49,7 @@ public class FileStreamingActivity extends AppCompatActivity implements RtmpHand
     private MediaMoviePlayer mPlayer;
     private StreamaxiaStreamer streamaxiaStreamer;
 
-    private String inputPath = "path-to-a-video-file";
+    private String inputPath;
 
     private byte[] mAudioOutTempBuf = new byte[1024];
     private byte[] mVideoOutTempBuf = new byte[1024];
@@ -95,6 +100,9 @@ public class FileStreamingActivity extends AppCompatActivity implements RtmpHand
         setContentView(R.layout.activity_file_streaming);
 
         ButterKnife.bind(this);
+
+        copyAssets();
+        inputPath = getCacheDir().getAbsolutePath() + "/bunny.mp4";
 
         mPlayer = new MediaMoviePlayer(mIFrameCallback, true);
         mPlayer.prepare(inputPath);
@@ -298,6 +306,44 @@ public class FileStreamingActivity extends AppCompatActivity implements RtmpHand
             streamaxiaStreamer.stopPublish();
         } catch (Exception e1) {
             // Ignore
+        }
+    }
+
+    private void copyAssets() {
+        AssetManager assetManager = getAssets();
+        String[] files = null;
+        try {
+            files = assetManager.list("videos");
+        } catch (IOException e) {
+            Log.e("tag", "Failed to get asset file list.", e);
+        }
+
+        for(String filename : files) {
+            InputStream in = null;
+            OutputStream out = null;
+            try {
+                in = assetManager.open("videos/" + filename);
+                File outFile = new File(getCacheDir(), filename);
+                if (!outFile.exists()) {
+                    out = new FileOutputStream(outFile);
+                    copyFile(in, out);
+                    out.flush();
+                    out.close();
+                }
+                in.close();
+                in = null;
+                out = null;
+            } catch(IOException e) {
+                Log.e("tag", "Failed to copy asset file: " + filename, e);
+            }
+        }
+    }
+
+    private void copyFile(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while((read = in.read(buffer)) != -1){
+            out.write(buffer, 0, read);
         }
     }
 }
