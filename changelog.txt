@@ -111,3 +111,7 @@ Version 4.1.6 - 17.06.2022
 Version 4.1.7 - 01.08.2022
 
 #Fixed authentication disconnect
+
+Version 4.1.8 - 04.12.2022
+
+#Rename native modules
