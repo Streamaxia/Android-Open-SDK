@@ -115,3 +115,7 @@ Version 4.1.7 - 01.08.2022
 Version 4.1.8 - 04.12.2022
 
 #Rename native modules
+
+Version 4.1.9 - 18.05.2023
+
+#Fix reverse portrait issues
