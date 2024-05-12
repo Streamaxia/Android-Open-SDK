@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StreamaxiaOpenSDKDemo.iml" filepath="$PROJECT_DIR$/StreamaxiaOpenSDKDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/StreamaxiaOpenSDKDemo.appdemo.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/streamaxia-opensdk/StreamaxiaOpenSDKDemo.streamaxia-opensdk.iml" filepath="$PROJECT_DIR$/.idea/modules/streamaxia-opensdk/StreamaxiaOpenSDKDemo.streamaxia-opensdk.iml" />
     </modules>
   </component>
